@@ -1,0 +1,43 @@
+.wrapper {
+  margin: 2vh auto;
+  padding: 1rem;
+  width: 60%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper--reversed {
+  flex-direction: row-reverse;
+}
+
+.img-ctl {
+  width: 60%;
+  margin: 1rem;
+}
+
+.img-ctl > img {
+  width: 100%;
+}
+
+.content {
+  width: 40%;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .img-ctl, .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+}

@@ -1,0 +1,20 @@
+Array
+(
+    [CustomField1] => 
+    [CustomField2] => 
+    [CustomField3] => 
+    [CustomField4] => 
+    [MerchantID] => 2000132
+    [MerchantTradeNo] => Test1527420564
+    [PaymentDate] => 2018/05/27 19:30:42
+    [PaymentType] => Credit_CreditCard
+    [PaymentTypeChargeFee] => 1
+    [RtnCode] => 1
+    [RtnMsg] => Succeeded
+    [SimulatePaid] => 0
+    [StoreID] => 
+    [TradeAmt] => 2000
+    [TradeDate] => 2018/05/27 19:29:25
+    [TradeNo] => 1805271929258500
+    [CheckMacValue] => 5767CD440828B6BFE3E2CFE29E8E0107AC44F812DE438A44DE5A73CB8CEC2C5A
+)

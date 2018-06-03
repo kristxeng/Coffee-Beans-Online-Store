@@ -1,0 +1,67 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+  background: #efefef;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #7b7b7b;
+}
+
+form > *{
+  box-sizing: border-box;
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.login-container {
+  max-width: 460px;
+  margin: 100px auto;
+}
+
+.login-box {
+  padding: 20px 0;
+
+}
+
+.title {
+  font-size: 58px;
+  font-weight: 300;
+}
+
+.login-box {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24);
+}
+
+.login__input {
+  margin-bottom: 20px;
+  line-height: 28px;
+  border: 1px solid #DDDDDD;
+}
+
+.login__warning {
+  height: 36px;
+  color: red;
+  text-align: center;
+}
+
+.login__btn {
+  border: none;
+  padding: 12px 0;
+  color: #7b7b7b;
+}
+
+.login__btn:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24);
+}
+
+.login__btn:active {
+  box-shadow: none;
+}
+
+.login__btn:focus {
+  outline: none;
+}
+
+

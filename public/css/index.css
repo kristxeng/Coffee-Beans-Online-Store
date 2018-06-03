@@ -1,0 +1,165 @@
+/****** Slideshow ******/
+.slideshow-container {
+  width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+    overflow: hidden;
+  }
+
+  .mySlides {
+    width: 800px;
+  }
+}
+
+/****** Topic ******/
+.topic {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh auto;
+  background-color: white;
+  padding: 1rem;
+}
+
+.topic__img-ctl {
+  width: 50%;
+}
+
+.topic__img-ctl > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.topic--reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.topic__content {
+  width: 50%;
+  padding: 2vw 1rem;
+}
+
+.topic__title {
+  font-size: 2.5rem;
+  font-family: "cwTeXMing", serif;
+  font-weight: 600;
+}
+
+.topic__title + p {
+  font-size: 1.2rem;
+}
+
+
+/****** featured set ******/
+
+.featured-set {
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 0 4vh;
+}
+
+.featured__item {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.featured__item > *+* {
+  margin-top: 1rem;
+}
+
+.item__img-ctl{
+  width: 90%;
+  margin: 1rem;
+}
+
+.item__img-ctl > img {
+  width: 100%;
+}
+
+.item__add-to-cart {
+  width: 90%;
+  height: 28px;
+  border: none;
+  background-color: rgb(226, 169, 142);
+  color: white;
+  margin: 1rem auto;
+}
+
+.item__add-to-cart:focus {
+  outline: none;
+}
+
+.item__add-to-cart:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgb(146, 89, 62);
+}
+
+.item__add-to-cart:active {
+  box-shadow: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .featured__item:last-child {
+    display: none;
+  }
+
+  .topic__title {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .topic {
+    flex-wrap: wrap;
+  }
+
+  .topic > div {
+    width: 450px;
+  }
+
+  .topic__content {
+    text-align: center;
+  }
+
+  .topic__title {
+    font-size: 1.6rem;
+  }
+
+  .featured-set {
+    flex-wrap: wrap;
+  }
+
+  .featured__item {
+    width: 80%;
+  }
+}
+
